@@ -16,7 +16,7 @@ h1 {
     font-style: italic;
     font-weight: 900;
     font-size: 50px;
-    color: #FF1801;
+    color: #af0034;
     margin-top: 15px;
 }
 
@@ -40,7 +40,7 @@ a {
 
 /* ----- header -----*/
 header {
-    background-color: #ff1801;
+    background-color: #af0034;
     position: sticky;
     top: 0;
     margin-bottom: 0;
@@ -284,18 +284,18 @@ main .banner-index h2 {
 .main-position section th {
     color: #fafafa;
     background-color: #1e1e1e;
-    border-color: red;
+    border-color: #af0034;
     text-align: center;
 }
 
 .main-position section table thead {
-    font-size: xx-large;
+    font-size: 2.5em;
 }
 
 .main-position section td {
     color: #fafafa;
     background-color: #1e1e1e;
-    border-color: red;
+    border-color: #af0034;
     text-align: center;
 }
 
@@ -387,7 +387,7 @@ main .banner-index h2 {
 
 .boton-comun {
     padding: 10px 10px 10px 10px;
-    background-color: #FF1801;
+    background-color: #af0034;
     color: #f0f0f0;
     border-radius: 5px;
     margin: 8px 8px 8px 8px;
@@ -421,7 +421,7 @@ footer div p {
 }
 
 footer div a i {
-    font-size: 50px;
+    font-size: 40px;
     height: auto !important;
     color: #fafafa;
 }
@@ -448,6 +448,18 @@ footer div a i {
 
     .calendar-title-grid {
         grid-column: 1 / 2;
+    }
+
+    .main-position section table thead {
+        font-size: 1.5em;
+    }
+
+    .row-pilotos {
+        font-size: 1em;
+    }
+
+    footer div a i {
+        font-size: 30px;
     }
 
 }
