@@ -49,6 +49,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    z-index: 2;
 }
 
 header nav {
@@ -304,6 +305,34 @@ main .banner-index h2 {
     font-family: 'roboto';
     font-weight: bolder;
 }
+
+/* ----------positions cards----------- */
+
+.position-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 10px 0 20px 0;
+    justify-items: center;
+    align-items: center;
+}
+
+.position-grid-item {
+    border-radius: 5px;
+    background-color: #fafafa;
+    font-size: 30px;
+    font-family: 'nunito';
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    box-shadow: 5px 5px 15px rgba(250, 1, 1, 0.288);
+    transition: 0.5s;
+}
+
+.position-grid-item img {
+    width: 100%;
+}
+
 /* +++++++++++++++++++++ FIN POSITION +++++++++++++ */
 
 /* -----------------contact--------------------- */
