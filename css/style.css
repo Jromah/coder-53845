@@ -364,6 +364,8 @@ main .banner-index h2 {
 
 .main-contact div form {
     width: 80%;
+    font-size: 1.5rem;
+    color: #fafafa;
 }
 
 /* .contact-form {
@@ -476,22 +478,6 @@ footer div a i {
         grid-column: 1 / 3;
     }
 
-}
-
-@media screen and (max-width: 840px) {
-    .position-grid {
-        grid-template-columns: repeat(1, 1fr);
-        grid-column-start: 2;
-    }
-    .segunda-posicion {
-        grid-area: 2 / 2 / 2;
-    }
-    .primera-posicion {
-        grid-area: 1 / 2 / 1;
-    }
-    .tercera-posicion {
-        grid-area: 3 / 2 / 3;
-    }
 }
 
 @media screen and (max-width: 799px) {

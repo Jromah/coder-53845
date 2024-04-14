@@ -47,7 +47,7 @@
         <section class="contacto-title">
             <h1>Contacto al Paddock</h1>
         </section>
-        <!-- <!-- <section class="contact-form">
+        <!-- <section class="contact-form">
             <form action="" method="" enctype="">
                 <div>
                     <label for="nombre">Nombre</label>
@@ -72,7 +72,179 @@
                     <a href="" class="boton-comun">Enviar</a>
                 </div>
             </form>
+        </section> -->
+        <div class="container d-flex justify-content-center align-items-center flex-column">
+            <h1>Formulario de contacto</h1>
+            <form action="" method="post" class="">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                </div>
+                
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+                </div>
+                
+                <div class="form-group">
+                    <label for="sexo">Sexo:</label>
+                    <select class="form-control" id="sexo" name="sexo">
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su correo electrónico">
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Ingrese su mensaje"></textarea>
+                </div>
+                
+                <button type="submit" class="btn boton-comun">Enviar</button>
+            </form>
+        </div>
+    </main>
+    <footer id="footer">
+        <div>
+            <a href="https://www.instagram.com/f1/" class="icon-link" target="_blank">
+                <i class="bi bi-instagram"></i>
+            </a>
+        </div>
+        <div>
+            <a href="https://twitter.com/F1" class="icon-link" target="_blank">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/c/f1" class="icon-link" target="_blank">
+                <i class="bi bi-youtube"></i>
+            </a>
+        </div>
+        <div>
+            <p>Sitio hecho por Jean</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>La Formula 1 2.0</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/logo-f1-blanco.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="../pages/calendario.html">Calendario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/posiciones.html">Posiciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Redes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main-contact">
+        <section class="contact-title">
+            <h1>Contacto al Paddock</h1>
         </section>
+        <!-- <section class="contact-form">
+            <form action="" method="" enctype="">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Carlos">
+                </div>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Sainz">
+                </div>
+                <div class="sex-contac">
+                    <label for="sexo">homrbe</label>
+                    <input type="radio">
+                    <label for="sexo">mujer</label>
+                    <input type="radio">
+                    <label for="sexo">otro</label>
+                    <input type="radio">
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <input type="text" name="mensaje" id="mensaje" class="input-text"
+                        placeholder="Escribe aqui tus sugerencias y dudas">
+                    <a href="" class="boton-comun">Enviar</a>
+                </div>
+            </form>
+        </section> -->
+        <div class="container">
+            <h1>Formulario de contacto</h1>
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                </div>
+                
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+                </div>
+                
+                <div class="form-group">
+                    <label for="sexo">Sexo:</label>
+                    <select class="form-control" id="sexo" name="sexo">
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su correo electrónico">
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Ingrese su mensaje"></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
     </main>
     <footer id="footer">
         <div>
