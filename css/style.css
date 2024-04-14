@@ -351,13 +351,22 @@ main .banner-index h2 {
     align-items: center;
 }
 
-.main-contact .contact-title {
+.main-contact .contacto-title {
     margin: 0 0 0 0;
     text-align: center;
     width: 100vw;
 }
 
-.contact-form {
+.main-contact .container {
+    background-color: #d3d3d378;
+    border-radius: 10px;
+}
+
+.main-contact div form {
+    width: 80%;
+}
+
+/* .contact-form {
     width: 50vw;
     height: 500px;
     background-color: #d3d3d34a;
@@ -409,7 +418,7 @@ main .banner-index h2 {
     width: 19vw;
     flex-direction: row;
     justify-content: center;
-}
+} */
 
 
 /* ----------------end contact---------------------- */
