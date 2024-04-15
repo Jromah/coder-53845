@@ -343,7 +343,7 @@ main .banner-index h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 80vh;
+    height: 85vh;
     margin-top: 0px;
     padding: 35px 10px 0 10px;
     display: flex;
@@ -522,5 +522,9 @@ footer div a i {
 @media screen and (max-width: 460px) {
     .calendar-title-grid {
         font-size: 3rem;
+    }
+
+    .main-contact {
+        height: 85vh;
     }
 }
