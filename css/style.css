@@ -524,4 +524,7 @@ footer div a i {
         font-size: 3rem;
     }
 
+    .main-contact {
+        height: 95vh;
+    }
 }
