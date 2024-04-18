@@ -36,6 +36,7 @@ p {
 
 a {
     font-family: 'roboto';
+    text-decoration: none;
 }
 
 /* ----- header -----*/
@@ -87,7 +88,7 @@ header nav ul li a {
 /* ----- main -----*/
 
 /* ----------INDEX--------------- */
-.main-index {
+main {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -172,7 +173,7 @@ main .banner-index h2 {
 }
 
 .noti-card h3 {
-    Margin: 10px 0 30PX 0;
+    margin: 10px 0 30PX 0;
 }
 
 /* -------------------end noticias-------------------- */
@@ -431,12 +432,15 @@ footer div a i {
         row-gap: 30px;
         column-gap: 0;
     }
+
     .primera-posicion {
         grid-area: 1/2/2;
     }
+
     .segunda-posicion {
         grid-area: 2/2/2;
     }
+
     .tercera-posicion {
         grid-area: 3/2/3;
     }

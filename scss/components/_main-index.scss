@@ -1,0 +1,40 @@
+//index
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    .banner-index {
+        background-image: url(../img/banner-ferrari-sf-24.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 50vh;
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        h1 {
+            color: #ffeb00;
+            text-shadow:
+                7px 7px 9px #000,
+                -3px 3px 2px #000,
+                -3px -3px 0 #000,
+                3px -3px 0 #000;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            color: #f0f0f0;
+            font-weight: 800;
+        }
+    }
+}
+
+//fin main index

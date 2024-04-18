@@ -1,0 +1,29 @@
+footer {
+    height: 100px;
+    background-color: #252525;
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    justify-content: space-between;
+
+    div {
+        align-items: center;
+        width: 50%;
+        display: flex;
+        margin: 0 10px 0 10px;
+        color: #b3b3b3;
+        justify-content: center;
+        font-weight: 500;
+
+        a i {
+            font-size: 40px;
+            height: auto !important;
+            color: #fafafa;
+        }
+
+        p {
+            color: #f0f0f0;
+            margin: 0 0 0 60px;
+            text-align: center;
+        }
+    }
+}
