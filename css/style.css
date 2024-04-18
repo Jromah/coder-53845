@@ -21,15 +21,15 @@ h1 {
 }
 
 h2 {
-    font-family: 'nunito';
+    font-family: 'roboto';
 }
 
 h3 {
-    font-family: 'nunito';
+    font-family: 'roboto';
 }
 
 p {
-    font-family: 'nunito';
+    font-family: 'roboto';
     color: #181818;
     font-weight: 500;
 }
@@ -219,14 +219,11 @@ main .banner-index h2 {
 .calendar-title-grid {
     grid-column: 1 / 4;
     align-content: center;
-    font-family: bebas;
+    font-family: 'bebas';
     font-style: italic;
     font-weight: 600;
     font-size: 4rem;
     color: #a30000;
-    -webkit-text-stroke: 19px #e1e1e1;
-    paint-order: stroke;
-    background-color: #ffffff00;
     text-align: center;
 }
 
@@ -369,61 +366,6 @@ main .banner-index h2 {
     color: #fafafa;
 }
 
-/* .contact-form {
-    width: 50vw;
-    height: 500px;
-    background-color: #d3d3d34a;
-    border-radius: 7px;
-    padding: 10px 10px 10px 10px;
-    margin: 30px 0 30px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-form form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-}
-
-.contact-form form div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 15px 0 10px 0;
-    width: 100%;
-}
-
-.contact-form form div label {
-    font-weight: 600;
-    font-size: 24px;
-    font-family: 'nunito';
-    margin: 0 10px 0 10px;
-}
-
-.contact-form form div input {
-    height: 40px;
-    font-size: 20px;
-    width: 60%;
-    padding: 10px;
-}
-
-.contact-form form div .input-text {
-    width: 80%;
-    height: 90px;
-}
-
-.contact-form form .sex-contac {
-    display: flex;
-    width: 19vw;
-    flex-direction: row;
-    justify-content: center;
-} */
-
-
 /* ----------------end contact---------------------- */
 
 .boton-comun {
@@ -432,6 +374,8 @@ main .banner-index h2 {
     color: #f0f0f0;
     border-radius: 5px;
     margin: 8px 8px 8px 8px;
+    font-family: 'roboto';
+    text-decoration: none;
 }
 
 
@@ -484,6 +428,8 @@ footer div a i {
 @media screen and (max-width: 840px) {
     .position-grid {
         grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+        column-gap: 0;
     }
     .primera-posicion {
         grid-area: 1/2/2;
