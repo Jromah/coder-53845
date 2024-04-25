@@ -83,35 +83,36 @@ main {
       text-align: center;
       color: #f0f0f0;
       font-weight: 800; }
-
-main section .noti-delta {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 80%; }
-  main section .noti-delta div {
-    margin: 30px 15px 30px 15px; }
-    main section .noti-delta div img {
-      width: 100%;
-      height: 197px;
-      border-radius: 5px 5px 0 0; }
-    main section .noti-delta div .noti-title {
+  main .noti-delta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%; }
+    main .noti-delta .noti-title {
+      margin: 30px 15px 30px 15px;
+      text-align: center;
       width: 100vw; }
-      main section .noti-delta div .noti-title h1 {
-        width: 100%; }
-      main section .noti-delta div .noti-title p {
-        width: 100%; }
-    main section .noti-delta div .noti-card {
-      width: 290px;
-      height: 363px;
+    main .noti-delta .noti-card {
+      width: 300px;
+      height: 375px;
       background-color: #fafafa;
-      border-radius: 5px;
-      box-shadow: 5px 5px 15px rgba(250, 1, 1, 0.288);
-      transition: 0.5s; }
-      main section .noti-delta div .noti-card h3 {
-        margin: 10px 0 30PX 0; }
-      main section .noti-delta div .noti-card .boton-comun {
+      border-radius: 10px;
+      border-bottom: solid 6px #af0034;
+      border-right: solid 6px #af0034;
+      margin: 30px 15px 30px 15px;
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+      main .noti-delta .noti-card img {
+        width: 100%;
+        height: 197px;
+        border-radius: 5px 5px 0 0; }
+      main .noti-delta .noti-card h3 {
+        margin: 10px 0 30PX 0;
+        text-align: center;
+        font-size: 1.4rem;
+        padding: 0 10px 0 10px; }
+      main .noti-delta .noti-card .boton-comun {
         padding: 10px 10px 10px 10px;
         background-color: #af0034;
         color: #f0f0f0;
@@ -119,6 +120,135 @@ main section .noti-delta {
         margin: 8px 8px 8px 8px;
         font-family: 'roboto';
         text-decoration: none; }
+  main .calendar-grid {
+    width: 80%;
+    padding: 0 20px 20px 20px;
+    display: grid;
+    margin: 5px;
+    grid-auto-rows: 420px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    gap: 30px; }
+    main .calendar-grid .calendar-title-grid {
+      grid-column: 1 / 4;
+      align-content: center;
+      font-family: 'bebas';
+      font-style: italic;
+      font-weight: 600;
+      font-size: 4rem;
+      color: #a30000;
+      text-align: center; }
+    main .calendar-grid .calendar-item {
+      background-color: #fafafa;
+      font-size: 30px;
+      font-family: 'roboto';
+      padding: 10px;
+      text-align: center;
+      align-content: center;
+      border-radius: 10px;
+      border-bottom: solid 6px #af0034;
+      border-right: solid 6px #af0034; }
+      main .calendar-grid .calendar-item h3 {
+        font-family: 'bebas neue';
+        font-style: italic;
+        font-size: 45px;
+        color: #a30000;
+        margin-top: 10px; }
+      main .calendar-grid .calendar-item h4 {
+        font-family: 'bebas neue';
+        font-style: italic;
+        font-size: 39px;
+        color: #181818;
+        margin: 0 0 17px 0; }
+      main .calendar-grid .calendar-item h5 {
+        font-size: 27px;
+        font-weight: 800; }
+      main .calendar-grid .calendar-item p {
+        font-family: 'roboto';
+        font-size: 21px;
+        font-weight: 400;
+        font-style: italic; }
+      main .calendar-grid .calendar-item .item-sakir {
+        background-image: url(../../img/Pistas/sakir-bahrain-item-calendar.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain; }
+
+.main-calendar {
+  margin-top: 0px;
+  padding: 35px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.main-position {
+  margin-top: 0px;
+  padding: 35px 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main-position .position-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 10px 0 20px 0;
+    justify-items: center;
+    align-items: center; }
+    .main-position .position-grid .position-grid-item {
+      border-radius: 5px;
+      background-color: #fafafa;
+      font-size: 30px;
+      font-family: 'nunito';
+      padding: 10px;
+      text-align: center;
+      align-content: center;
+      border-bottom: solid 6px #af0034;
+      border-right: solid 6px #af0034; }
+      .main-position .position-grid .position-grid-item img {
+        width: 100%; }
+  .main-position section {
+    width: 80%; }
+    .main-position section table thead {
+      font-size: 2.5em; }
+    .main-position section table th {
+      color: #fafafa;
+      background-color: #1e1e1e;
+      border-color: #af0034;
+      text-align: center; }
+    .main-position section table td {
+      color: #fafafa;
+      background-color: #1e1e1e;
+      border-color: #af0034;
+      text-align: center; }
+      .main-position section table td .row-pilotos {
+        font-size: 20px;
+        font-family: 'roboto';
+        font-weight: bolder; }
+
+.main-contact {
+  background-image: url(../img/fondo-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
+  min-height: 95vh;
+  margin-top: 0px;
+  padding: 35px 10px 35px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main-contact .contacto-title {
+    margin: 0 0 0 0;
+    text-align: center;
+    width: 100vw; }
+  .main-contact .container {
+    background-color: #d3d3d378;
+    border-radius: 10px; }
+    .main-contact .container form {
+      width: 80%;
+      font-size: 1.5rem;
+      color: #fafafa; }
 
 footer {
   height: 100px;

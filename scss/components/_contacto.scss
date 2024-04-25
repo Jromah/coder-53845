@@ -1,0 +1,28 @@
+.main-contact {
+    background-image: url(../img/fondo-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+    min-height: 95vh;
+    margin-top: 0px;
+    padding: 35px 10px 35px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .contacto-title {
+        margin: 0 0 0 0;
+        text-align: center;
+        width: 100vw;
+    }
+    .container {
+        background-color: #d3d3d378;
+        border-radius: 10px;
+        form {
+            width: 80%;
+            font-size: 1.5rem;
+            color: #fafafa;
+        }
+    }
+}

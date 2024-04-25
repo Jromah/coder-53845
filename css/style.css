@@ -187,12 +187,9 @@ main .banner-index h2 {
     align-items: center;
 }
 
-.main-index .calendar-grid {
+.calendar-grid {
     width: 80%;
     padding: 0 20px 20px 20px;
-}
-
-.calendar-grid {
     display: grid;
     margin: 5px;
     grid-auto-rows: 420px;
