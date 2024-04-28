@@ -1,0 +1,9 @@
+.boton-comun {
+    padding: 10px 10px 10px 10px;
+    background-color: map-get($boton, bg-botonp);
+    color: $color-blanco;
+    border-radius: 5px;
+    margin: 8px 8px 8px 8px;
+    font-family: 'roboto';
+    text-decoration: none;
+}

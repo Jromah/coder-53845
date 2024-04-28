@@ -32,6 +32,15 @@ body {
     font-family: 'roboto';
     text-decoration: none; }
 
+.boton-comun {
+  padding: 10px 10px 10px 10px;
+  background-color: #af0034;
+  color: #fafafa;
+  border-radius: 5px;
+  margin: 8px 8px 8px 8px;
+  font-family: 'roboto';
+  text-decoration: none; }
+
 header {
   background-color: #af0034;
   position: sticky;
@@ -124,14 +133,6 @@ main {
         text-align: center;
         font-size: 1.4rem;
         padding: 0 10px 0 10px; }
-      main .noti-delta .noti-card .boton-comun {
-        padding: 10px 10px 10px 10px;
-        background-color: #af0034;
-        color: #fafafa;
-        border-radius: 5px;
-        margin: 8px 8px 8px 8px;
-        font-family: 'roboto';
-        text-decoration: none; }
 
 .calendar-grid {
   width: 80%;
@@ -251,7 +252,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: unset;
+  flex-direction: column;
   flex-wrap: nowrap; }
   .main-contact .contacto-title {
     margin: 0 0 0 0;
