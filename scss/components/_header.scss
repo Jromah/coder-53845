@@ -1,7 +1,7 @@
 //header navbar
 
 header {
-    background-color: #af0034;
+    background-color: $color-rojobase;
     position: sticky;
     top: 0;
     margin-bottom: 0;
@@ -32,7 +32,7 @@ header {
                 padding: 15px 15px 15px 15px;
 
                 a {
-                    color: #f0f0f0 !important;
+                    color: $color-blanco !important;
                     font-family: 'roboto';
                     font-weight: 500 !important;
                     font-size: 20px !important;

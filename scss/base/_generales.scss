@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
+// VARIABLES
+
+//COLORES
+$color-rojobase:#af0034;
+$color-blanco: #fafafa;
+$color-negrobase: #181818;
+$primary: green;
 
 * {
     margin: 0;
@@ -18,7 +25,7 @@ body {
         font-style: italic;
         font-weight: 900;
         font-size: 50px;
-        color: #af0034;
+        color: $color-rojobase;
         margin-top: 15px;
     }
 
@@ -32,7 +39,7 @@ body {
 
     p {
         font-family: 'roboto';
-        color: #181818;
+        color: $color-negrobase;
         font-weight: 500;
     }
 
@@ -43,3 +50,4 @@ body {
 }
 
 // fin body generales
+
