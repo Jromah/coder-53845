@@ -141,7 +141,8 @@ main {
   grid-auto-rows: 420px;
   grid-template-columns: repeat(3, 1fr);
   width: 80%;
-  gap: 30px; }
+  gap: 30px;
+  align-items: center; }
   .calendar-grid .calendar-title-grid {
     grid-column: 1 / 4;
     align-content: center;
@@ -291,3 +292,38 @@ footer {
       color: #fafafa;
       margin: 0 0 0 60px;
       text-align: center; }
+
+@media screen and (max-width: 1200px) {
+  .main-calendar .calendar-grid {
+    grid-template-columns: repeat(2, 1fr); }
+    .main-calendar .calendar-grid .calendar-title-grid {
+      grid-column: 1 / 3; } }
+
+@media screen and (max-width: 840px) {
+  .main-position .position-grid {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+    column-gap: 0; }
+    .main-position .position-grid .primera-posicion {
+      grid-area: 1/2/2; }
+    .main-position .position-grid .segunda-posicion {
+      grid-area: 2/2/2; }
+    .main-position .position-grid .tercera-posicion {
+      grid-area: 3/2/3; } }
+
+@media screen and (max-width: 799px) {
+  .main-calendar .calendar-grid {
+    grid-template-columns: repeat(1, 1fr); }
+    .main-calendar .calendar-grid .calendar-title-grid {
+      grid-column: 1 / 2;
+      width: 100%; }
+  .main-position section table thead {
+    font-size: 1.5em; }
+  .main-position section table .row-pilotos {
+    font-size: 1em; }
+  footer div a i {
+    font-size: 30px; } }
+
+@media screen and (max-width: 460px) {
+  .main-calendar .calendar-grid .calendar-title-grid {
+    font-size: 3rem; } }
