@@ -1,9 +1,7 @@
 .main-position {
     margin-top: 0px;
     padding: 35px 10px 0 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex (flex, center, center, column, nowrap);
 
     .position-grid {
         display: grid;
@@ -15,17 +13,18 @@
 
         .position-grid-item {
             border-radius: 5px;
-            background-color: #fafafa;
+            background-color: $color-blanco;
             font-size: 30px;
             font-family: 'nunito';
             padding: 10px;
             text-align: center;
             align-content: center;
-            border-bottom: solid 6px #af0034;
-            border-right: solid 6px #af0034;
+            border-bottom: solid 6px $color-rojobase;
+            border-right: solid 6px $color-rojobase;
 
             img {
                 width: 100%;
+                height: $alto - 5;
             }
         }
     }
@@ -39,16 +38,16 @@
             }
 
             th {
-                color: #fafafa;
-                background-color: #1e1e1e;
-                border-color: #af0034;
+                color: $color-blanco;
+                background-color: $color-negrobase;
+                border-color: $color-rojobase;
                 text-align: center;
             }
 
             td {
-                color: #fafafa;
-                background-color: #1e1e1e;
-                border-color: #af0034;
+                color: $color-blanco;
+                background-color: $color-negrobase;
+                border-color: $color-rojobase;
                 text-align: center;
 
                 .row-pilotos {

@@ -1,27 +1,26 @@
 footer {
     height: 100px;
-    background-color: #252525;
-    display: flex;
+    background-color: nth($colores, 3);
     padding: 10px 10px 10px 10px;
-    justify-content: space-between;
+    @include flex (flex, space-between, unset, unset, nowrap);
 
     div {
-        align-items: center;
+        
         width: 50%;
-        display: flex;
+        @include flex (flex, center, center, unset, nowrap);
         margin: 0 10px 0 10px;
-        color: #b3b3b3;
-        justify-content: center;
+        color: $color-blanco;
+        
         font-weight: 500;
 
         a i {
             font-size: 40px;
             height: auto !important;
-            color: #fafafa;
+            color: $color-blanco;
         }
 
         p {
-            color: #f0f0f0;
+            color: $color-blanco;
             margin: 0 0 0 60px;
             text-align: center;
         }

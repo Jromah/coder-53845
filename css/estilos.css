@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+main .banner-index, .main-contact {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
 * {
   margin: 0;
   padding: 0;
@@ -60,20 +66,20 @@ header {
 
 main {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: nowrap;
   width: 100%; }
   main .banner-index {
     background-image: url(../img/banner-ferrari-sf-24.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     height: 50vh;
     margin-top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: unset;
+    flex-wrap: nowrap;
     width: 100%; }
     main .banner-index h1 {
       color: #ffeb00;
@@ -81,11 +87,13 @@ main {
       text-align: center; }
     main .banner-index h2 {
       text-align: center;
-      color: #f0f0f0;
+      color: #fafafa;
       font-weight: 800; }
   main .noti-delta {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: unset;
     flex-wrap: wrap;
     width: 80%; }
     main .noti-delta .noti-title {
@@ -101,13 +109,15 @@ main {
       border-right: solid 6px #af0034;
       margin: 30px 15px 30px 15px;
       display: flex;
+      justify-content: center;
       align-items: center;
-      flex-direction: column; }
+      flex-direction: column;
+      flex-wrap: nowrap; }
       main .noti-delta .noti-card:hover {
         box-shadow: 7px 7px 11px #ca000094; }
       main .noti-delta .noti-card img {
         width: 100%;
-        height: 197px;
+        height: 100%;
         border-radius: 5px 5px 0 0; }
       main .noti-delta .noti-card h3 {
         margin: 10px 0 30PX 0;
@@ -117,7 +127,7 @@ main {
       main .noti-delta .noti-card .boton-comun {
         padding: 10px 10px 10px 10px;
         background-color: #af0034;
-        color: #f0f0f0;
+        color: #fafafa;
         border-radius: 5px;
         margin: 8px 8px 8px 8px;
         font-family: 'roboto';
@@ -139,7 +149,7 @@ main {
     font-style: italic;
     font-weight: 600;
     font-size: 4rem;
-    color: #a30000;
+    color: #af0034;
     text-align: center; }
   .calendar-grid .calendar-item {
     background-color: #fafafa;
@@ -155,7 +165,7 @@ main {
       font-family: 'bebas neue';
       font-style: italic;
       font-size: 45px;
-      color: #a30000;
+      color: #af0034;
       margin-top: 10px; }
     .calendar-grid .calendar-item h4 {
       font-family: 'bebas neue';
@@ -176,15 +186,19 @@ main {
   margin-top: 0px;
   padding: 35px 10px 20px 10px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  align-items: center; }
+  flex-wrap: nowrap; }
 
 .main-position {
   margin-top: 0px;
   padding: 35px 10px 0 10px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  align-items: center; }
+  flex-wrap: nowrap; }
   .main-position .position-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -203,19 +217,20 @@ main {
       border-bottom: solid 6px #af0034;
       border-right: solid 6px #af0034; }
       .main-position .position-grid .position-grid-item img {
-        width: 100%; }
+        width: 100%;
+        height: 95%; }
   .main-position section {
     width: 80%; }
     .main-position section table thead {
       font-size: 2.5em; }
     .main-position section table th {
       color: #fafafa;
-      background-color: #1e1e1e;
+      background-color: #181818;
       border-color: #af0034;
       text-align: center; }
     .main-position section table td {
       color: #fafafa;
-      background-color: #1e1e1e;
+      background-color: #181818;
       border-color: #af0034;
       text-align: center; }
       .main-position section table td .row-pilotos {
@@ -223,19 +238,20 @@ main {
         font-family: 'roboto';
         font-weight: bolder; }
 
+.btn-producto {
+  background-color: #aa8f00 !important; }
+
 .main-contact {
   background-image: url(../img/fondo-3.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   height: auto;
   min-height: 95vh;
   margin-top: 0px;
   padding: 35px 10px 35px 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  justify-content: center;
+  align-items: center;
+  flex-direction: unset;
+  flex-wrap: nowrap; }
   .main-contact .contacto-title {
     margin: 0 0 0 0;
     text-align: center;
@@ -250,23 +266,28 @@ main {
 
 footer {
   height: 100px;
-  background-color: #252525;
-  display: flex;
+  background-color: #181818;
   padding: 10px 10px 10px 10px;
-  justify-content: space-between; }
+  display: flex;
+  justify-content: space-between;
+  align-items: unset;
+  flex-direction: unset;
+  flex-wrap: nowrap; }
   footer div {
-    align-items: center;
     width: 50%;
     display: flex;
-    margin: 0 10px 0 10px;
-    color: #b3b3b3;
     justify-content: center;
+    align-items: center;
+    flex-direction: unset;
+    flex-wrap: nowrap;
+    margin: 0 10px 0 10px;
+    color: #fafafa;
     font-weight: 500; }
     footer div a i {
       font-size: 40px;
       height: auto !important;
       color: #fafafa; }
     footer div p {
-      color: #f0f0f0;
+      color: #fafafa;
       margin: 0 0 0 60px;
       text-align: center; }

@@ -1,7 +1,7 @@
 //header navbar
 
 header {
-    background-color: $color-rojobase;
+    background-color: nth($colores, 1);
     position: sticky;
     top: 0;
     margin-bottom: 0;

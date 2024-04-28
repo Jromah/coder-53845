@@ -1,0 +1,43 @@
+// VARIABLES
+
+//!COLORES
+$color-rojobase: #af0034;
+$color-blanco: #fafafa;
+$color-negrobase: #181818;
+
+//!LISTA
+
+$colores:
+#af0034,
+#fafafa,
+#181818;
+
+//!MAPA
+
+$boton: (
+    bg-botonp:$color-rojobase,
+    bg-botons:#aa8f00,
+);
+
+//!EXTEND
+
+%background-properties {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+//!MIXIN
+
+@mixin flex ($flex, $justify, $align, $direction, $wrap) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+//! operacion
+
+$alto: 100%;
