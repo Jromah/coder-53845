@@ -295,6 +295,10 @@ footer {
       text-align: center; }
 
 @media screen and (max-width: 1200px) {
+  .main-index .calendar-grid {
+    grid-template-columns: repeat(2, 1fr); }
+    .main-index .calendar-grid .calendar-title-grid {
+      grid-column: 1 / 3; }
   .main-calendar .calendar-grid {
     grid-template-columns: repeat(2, 1fr); }
     .main-calendar .calendar-grid .calendar-title-grid {
@@ -313,6 +317,11 @@ footer {
       grid-area: 3/2/3; } }
 
 @media screen and (max-width: 799px) {
+  .main-index .calendar-grid {
+    grid-template-columns: repeat(1, 1fr); }
+    .main-index .calendar-grid .calendar-title-grid {
+      grid-column: 1 / 2;
+      width: 100%; }
   .main-calendar .calendar-grid {
     grid-template-columns: repeat(1, 1fr); }
     .main-calendar .calendar-grid .calendar-title-grid {
@@ -326,5 +335,7 @@ footer {
     font-size: 30px; } }
 
 @media screen and (max-width: 460px) {
+  .main-index .calendar-grid .calendar-title-grid {
+    font-size: 3rem; }
   .main-calendar .calendar-grid .calendar-title-grid {
     font-size: 3rem; } }
