@@ -4,8 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
     <title>La Formula 1 2.0 al instante: Noticias, resultados y análisis.</title>
-    <meta name="description" content="Vive la emoción de la F1 al máximo: Noticias, resultados, análisis y estadísticas detalladas.">
+    <meta name="title" content="La Formula 1 2.0 al instante: Noticias, resultados y análisis." />
+    <meta name="description"
+        content="Vive la emoción de la F1 al máximo: Noticias, resultados, análisis y estadísticas detalladas." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://formula2-0.netlify.app/" />
+    <meta property="og:title" content="La Formula 1 2.0 al instante: Noticias, resultados y análisis." />
+    <meta property="og:description"
+        content="Vive la emoción de la F1 al máximo: Noticias, resultados, análisis y estadísticas detalladas." />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://formula2-0.netlify.app/" />
+    <meta property="twitter:title" content="La Formula 1 2.0 al instante: Noticias, resultados y análisis." />
+    <meta property="twitter:description"
+        content="Vive la emoción de la F1 al máximo: Noticias, resultados, análisis y estadísticas detalladas." />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -20,7 +41,8 @@
     <header id="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#main-index"><img src="./img/logo-f1-blanco.png" alt="logo-f1-color-blanco"></a>
+                <a class="navbar-brand" href="#main-index"><img src="./img/logo-f1-blanco.png"
+                        alt="logo-f1-color-blanco"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -62,38 +84,136 @@
             <div class="noti-card">
                 <img src="./img/pilotos/carlos-sainz-ferrari-noticia.jpg" alt="noticia-carlos-saiz-sale-ferrari">
                 <h3>Ferrari perdío al precindir de Sainz?</h3>
-                <a href="./index.html" class="boton-comun">Leer Noticia</a>
+                <button type="button" class="boton-comun" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Leer Noticia
+                </button>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">La perdida de Ferrari</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    ¡Ferrari en la encrucijada: Adiós Sainz, hola Hamilton!
+                                    La Scuderia apuesta por el talento y la experiencia de Hamilton, pero deja ir a un
+                                    piloto sólido y en ascenso.
+                                </p>
+                                <p>
+                                    En una decisión que ha conmocionado al mundo de la Fórmula 1, Ferrari ha anunciado
+                                    el fichaje de Lewis Hamilton para la temporada 2025, reemplazando al español Carlos
+                                    Sainz. Si bien la llegada del siete veces campeón del mundo a la mítica escudería
+                                    italiana representa un sueño hecho realidad para muchos aficionados, surgen
+                                    interrogantes sobre las repercusiones a largo plazo de este movimiento.
+                                </p>
+                                <p>
+                                    Sainz, un piloto subestimado:
+                                </p>
+                                <p>
+                                    Sainz, quien se unió a Ferrari en 2021, ha demostrado ser un piloto consistente y
+                                    valioso para el equipo. Logró cinco podios en su primera temporada, incluyendo un
+                                    segundo puesto en Mónaco, y ha seguido peleando por victorias y podios en 2023. Su
+                                    salida significa perder un piloto experimentado, trabajador y que ha demostrado una
+                                    gran capacidad de adaptación.
+                                </p>
+                                <p>
+                                    ¿Apuesta arriesgada o golpe maestro?:
+                                </p>
+                                <p>
+                                    La experiencia y el talento de Hamilton son innegables. Es uno de los pilotos más
+                                    laureados de la historia de la F1, con un récord de siete campeonatos mundiales, 103
+                                    victorias y 103 poles. Sin embargo, su estilo de conducción agresivo y su estatus de
+                                    estrella podrían generar tensiones dentro del equipo, especialmente con un piloto
+                                    talentoso como Charles Leclerc.
+                                </p>
+                                <p>
+                                    Solo el tiempo dirá si esta arriesgada apuesta por Hamilton impulsa a Ferrari hacia
+                                    su octavo título mundial o si la aleja de su objetivo. La Scuderia se encuentra en
+                                    una encrucijada, y las próximas temporadas serán cruciales para determinar el éxito
+                                    de esta nueva era.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
             <div class="noti-card">
-                <img src="./img/pilotos/carlos-sainz-ferrari-noticia.jpg" alt="noticia-carlos-saiz-sale-ferrari">
-                <h3>Ferrari perdío al precindir de Sainz?</h3>
-                <a href="./index.html" class="boton-comun">Leer Noticia</a>
+                <img src="./img/hamilton-ferrari.jpg" alt="hamilton-ferrari">
+                <h3>¡¡El fichaje del Siglo!!</h3>
+                <button type="button" class="boton-comun" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Leer Noticia
+                </button>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Hamilton a Ferrari, en el fichaje
+                                    del Siglo</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                <h3> ¡Terremoto en la F1: Hamilton ficha por Ferrari!</h3>
+                                El heptacampeón británico se une a la Scuderia en 2025.
+                                </p>
+                                <p>
+                                    El mundo de la Fórmula 1 se ha visto sacudido por el fichaje de Lewis Hamilton por
+                                    Ferrari para la temporada 2025. Un movimiento histórico que reúne a dos leyendas del
+                                    automovilismo y promete redefinir el panorama de la competición en los próximos
+                                    años.
+                                </p>
+                                <p>
+                                    Un sueño hecho realidad:
+                                </p>
+                                <p>
+                                    Para muchos aficionados, ver a Hamilton con el mono de Ferrari es un sueño hecho
+                                    realidad. El piloto británico, considerado por muchos como el mejor de su era,
+                                    siempre ha admirado a la Scuderia y su rica historia en la F1.
+                                </p>
+                                <p>
+                                    Un nuevo desafío para ambos:
+                                </p>
+                                <p>
+                                    A sus 38 años, Hamilton busca nuevos retos y la oportunidad de luchar por su octavo
+                                    título mundial con un equipo legendario como Ferrari es irresistible. Se espera que
+                                    su experiencia, talento y liderazgo impulsen al equipo italiano hacia lo más alto.
+                                    Para Ferrari, Hamilton significa contar con uno de los mejores pilotos de la
+                                    historia y aspirar a dominar la F1 en los próximos años.
+                                </p>
+                                <p>
+                                    Un futuro incierto:
+                                </p>
+                                <p>
+                                    Sin embargo, este movimiento no está exento de riesgos. La fuerte personalidad y
+                                    estilo de conducción agresivo de Hamilton podrían generar tensiones, especialmente
+                                    con Charles Leclerc.
+                                </p>
+                                <p>
+                                    ¿Un nuevo capítulo dorado para Ferrari?:
+                                </p>
+                                <p>
+                                    Solo el tiempo dirá si la apuesta por Hamilton será un éxito. Lo que sí es seguro es
+                                    que este fichaje marca un antes y un después en la F1, y que la próxima temporada
+                                    promete ser una de las más emocionantes y competitivas
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="noti-card">
-                <img src="./img/pilotos/carlos-sainz-ferrari-noticia.jpg" alt="noticia-carlos-saiz-sale-ferrari">
-                <h3>Ferrari perdío al precindir de Sainz?</h3>
-                <a href="./index.html" class="boton-comun">Leer Noticia</a>
-            </div>
-            <div class="noti-card">
-                <img src="./img/pilotos/carlos-sainz-ferrari-noticia.jpg" alt="noticia-carlos-saiz-sale-ferrari">
-                <h3>Ferrari perdío al precindir de Sainz?</h3>
-                <a href="./index.html" class="boton-comun">Leer Noticia</a>
-            </div>
-            <div class="noti-card">
-                <img src="./img/pilotos/carlos-sainz-ferrari-noticia.jpg" alt="noticia-carlos-saiz-sale-ferrari">
-                <h3>Ferrari perdío al precindir de Sainz?</h3>
-                <a href="./index.html" class="boton-comun">Leer Noticia</a>
-            </div>
-            <div class="noti-card">
-                <img src="./img/pilotos/carlos-sainz-ferrari-noticia.jpg" alt="noticia-carlos-saiz-sale-ferrari">
-                <h3>Ferrari perdío al precindir de Sainz?</h3>
-                <a href="./index.html" class="boton-comun">Leer Noticia</a>
-            </div>
-            <div class="noti-card">
-                <img src="./img/pilotos/carlos-sainz-ferrari-noticia.jpg" alt="noticia-carlos-saiz-sale-ferrari">
-                <h3>Ferrari perdío al precindir de Sainz?</h3>
-                <a href="./index.html" class="boton-comun">Leer Noticia</a>
-            </div>
+
+
         </section>
         <section class="calendar-grid">
             <!-- tanto esta seccion, como la pagina de calendario contienen grid -->

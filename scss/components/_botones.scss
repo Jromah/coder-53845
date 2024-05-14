@@ -6,4 +6,12 @@
     margin: 8px 8px 8px 8px;
     font-family: 'roboto';
     text-decoration: none;
+    &:hover {
+        background-color: $color-amarillo !important;
+        border-color: $color-rojobase;
+    }
+    &:active {
+        background-color: $color-amarillo !important;
+        border-color: $color-rojobase;
+    }
 }
