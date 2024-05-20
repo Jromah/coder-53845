@@ -1,6 +1,7 @@
 main {
     .noti-delta {
         .noti-card {
+            background-color: #fff;
             .btn-producto {
                 background-color: map-get($boton, bg-botons) !important;
             }

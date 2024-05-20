@@ -247,11 +247,12 @@ main {
         font-family: 'roboto';
         font-weight: bolder; }
 
-main .noti-delta .noti-card .btn-producto {
-  background-color: #aa8f00 !important; }
-
-main .noti-delta .noti-card img {
-  width: 80%; }
+main .noti-delta .noti-card {
+  background-color: #fff; }
+  main .noti-delta .noti-card .btn-producto {
+    background-color: #aa8f00 !important; }
+  main .noti-delta .noti-card img {
+    width: 80%; }
 
 .main-contact {
   height: auto;
