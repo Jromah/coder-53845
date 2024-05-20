@@ -1,23 +1,32 @@
 .main-contact {
-    background-image: url(../img/fondo-3.jpg);
+
     @extend %background-properties;
     height: auto;
     min-height: 95vh;
     margin-top: 0px;
     padding: 35px 10px 35px 10px;
     @include flex (flex, center, center, column, nowrap);
+
     .contacto-title {
         margin: 0 0 0 0;
         text-align: center;
         width: 100vw;
     }
-    .container {
+
+    .form-contact {
+        width: 50%;
         background-color: #d3d3d378;
         border-radius: 10px;
-        form {
-            width: 80%;
-            font-size: 1.5rem;
-            color: $color-blanco;
+
+        .container {
+            width: 100%;
+
+            form {
+                width: 80%;
+                font-size: 1.5rem;
+                color: $color-blanco;
+            }
         }
+
     }
 }

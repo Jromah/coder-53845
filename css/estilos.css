@@ -19,7 +19,8 @@ body {
     font-weight: 900;
     font-size: 50px;
     color: #af0034;
-    margin-top: 15px; }
+    margin-top: 15px;
+    text-align: center; }
   body h2 {
     font-family: 'roboto'; }
   body h3 {
@@ -250,7 +251,6 @@ main {
   background-color: #aa8f00 !important; }
 
 .main-contact {
-  background-image: url(../img/fondo-3.jpg);
   height: auto;
   min-height: 95vh;
   margin-top: 0px;
@@ -264,13 +264,28 @@ main {
     margin: 0 0 0 0;
     text-align: center;
     width: 100vw; }
-  .main-contact .container {
+  .main-contact .form-contact {
+    width: 50%;
     background-color: #d3d3d378;
     border-radius: 10px; }
-    .main-contact .container form {
-      width: 80%;
-      font-size: 1.5rem;
-      color: #fafafa; }
+    .main-contact .form-contact .container {
+      width: 100%; }
+      .main-contact .form-contact .container form {
+        width: 80%;
+        font-size: 1.5rem;
+        color: #fafafa; }
+
+.noti-main {
+  padding: 0 10% 4% 10%;
+  position: relative; }
+  .noti-main h1 {
+    margin: 50px 0 45px 0;
+    font-size: 5em; }
+  .noti-main p {
+    font-size: 1.5em; }
+  .noti-main h2 {
+    color: #af0034;
+    margin-bottom: 20px; }
 
 footer {
   height: 100px;
