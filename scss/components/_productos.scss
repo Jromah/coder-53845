@@ -1,3 +1,13 @@
-.btn-producto {
-    background-color: map-get($boton, bg-botons) !important;
+main {
+    .noti-delta {
+        .noti-card {
+            .btn-producto {
+                background-color: map-get($boton, bg-botons) !important;
+            }
+
+            img {
+                width: 80%;
+            }
+        }
+    }
 }
