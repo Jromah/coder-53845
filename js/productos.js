@@ -1,55 +1,59 @@
-//espacio de pruebas
+// // Lista de productos y precios
+// const productos = [
+//     { nombre: "Campera Ferrari 2023", precio: 100 },
+//     { nombre: "Campera RedBull 2023", precio: 100 },
+//     { nombre: "Campera Mercedes 2022", precio: 90 },
+//     { nombre: "Gorra Mercedes 2023", precio: 30 },
+//     { nombre: "Gorra Leclerc 2024", precio: 30 },
+//     { nombre: "Gorra RedBull 2024", precio: 30 }
+// ];
 
-// console.log('hola mundo');
+// // Función para mostrar los productos y seleccionar
+// function seleccionarProducto() {
+//     let mensaje = "Que tipo de compuesto quieres para ti?:\n";
+//     productos.forEach((producto, i) => {
+//         mensaje += `${i + 1}. ${producto.nombre} - $${producto.precio}\n`;
+//     });
+//     return parseInt(prompt(mensaje)) - 1;
+// }
 
-// let NombreComprador = "Mike";
-// let ApellidoComprador = "Rodriguez";
+// // Función para calcular el total
+// function calcularTotal(indices) {
+//     return indices.reduce((total, indice) => total + productos[indice].precio, 0);
+// }
 
-// console.log(NombreComprador + " " +ApellidoComprador);
-//fin de pruebas
+// // Interacción con el usuario
+// let indicesSeleccionados = [];
+// let seleccion = seleccionarProducto();
+// while (seleccion >= 0 && seleccion < productos.length) {
+//     indicesSeleccionados.push(seleccion);
+//     seleccion = seleccionarProducto();
+// }
 
-/*
-const NombreComprador = prompt("Hello mate!!, como puedo llamarte en tu paso por el pitstop");
-const ApellidoComprador = prompt("Disculpa, podrias recordarme tu apellido?");
-
-let AnioNacimiento = prompt(NombreComprador + " necesitamos tu año de nacimiento para saber si puedes salir a pista");
-
-let Edad = 2024 - Number(AnioNacimiento);
+// // Mostrar resultado final
+// const total = calcularTotal(indicesSeleccionados);
+// alert(`El total a pagar es: $${total}`);
 
 
-if (Edad < 18) {
-    console.log("¡¡PENALIZACIÓN!!, por cumplir el requisito de 18 años de edad");
-    
-} else {
-    console.log(NombreComprador + " tienes " + Edad + " años, puedes confiar en nosotros, somos el mejor equipo para tu cambio de compuestos.");
-}*/
+const productos = [
+    { nombre: 'Campera Ferrari 2023', precio: 2500 },
+    { nombre: 'Campera RedBull 2023', precio: 2000 },
+    { nombre: 'Campera Mercedes 2022', precio: 1500 },
+    { nombre: 'Gorra Mercedes 2023', precio: 200 },
+    { nombre: 'Gorra Leclerc 2024', precio: 3000 },
+    { nombre: 'Gorra RedBull 2024', precio: 2700 }
+];
 
-/*console.log(NombreComprador);
-console.log(ApellidoComprador);
-console.log(AnioNacimiento);
-console.log(Edad); */
-
-let Opciones;
-
-let camperas = 1;
-
-while (Opciones != 0) {
-    const Opciones = prompt("Cuantas camperas quieres: \n 1. 1 campera \n 2. Más de una? \n 3. \n 0. Salir");
-
-    if (Opciones == 1) {
-        alert ("Estas comprando " + camperas + " Campera ya eres parte del ¡¡BOX DE FERRARI!!");
-    } else if (Opciones == 2) {
-        // unidades = 1;
-
-        let CantidadCamperas = prompt("Cuantas camperas quieres?");
-
-        CantidadCamperas = CantidadCamperas * camperas;
-
-        alert ("Estas comprando " + CantidadCamperas + " camperas de Ferrari!!");
-    } else if (Opciones == 0) {
-        alert ("Esperemos que vuelvas, cuando tengas contrato con un equipo.");
-    } else {
-        alert ("Ingresa un tipo de compuesto válido")
+let carrito = [];
+let seleccion = '';
+do {
+    seleccion = prompt('Elige un producto y cuando quieras terminar la compra escribe finalizar:\n' + productos.map((producto, i) => `${i + 1}. ${producto.nombre}`).join('\n') );
+    if (seleccion !== 'finalizar') {
+        const cantidad = parseInt(prompt('¿Cuántas unidades quieres?'), 10);
+        const producto = productos[parseInt(seleccion, 10) - 1];
+        carrito.push({ ...producto, cantidad });
     }
-}
+} while (seleccion !== 'finalizar');
 
+const total = carrito.reduce((acum, { precio, cantidad }) => acum + precio * cantidad, 0);
+alert(`El total de tu compra es: $${total}` + ' pesos.');
