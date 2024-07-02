@@ -73,7 +73,7 @@
                 <h2>en un solo pitstop</h2>
             </div>
         </section>
-        <section class="noti-delta">
+        <!-- <section class="noti-delta">
             <div class="noti-title">
                 <h1>Todo lo que buscas</h1>
                 <p>para ser un verdadero fan de la F1</p>
@@ -90,65 +90,157 @@
                 <h3>Campera Ferrari 2023</h3>
                 <button class="boton-comun btn-producto" id="btn" type="submit">Anadir al carrito</button>
                 <!-- <a href="./productos.html" class="boton-comun btn-producto" id="btn-ferrari" ty>añadir al carrito</a> -->
-            </div>
+        <!-- </div>
             <div class="noti-card">
                 <img src="../img/campera-redbull-2023.jpg" alt="campera-redbull-2023">
                 <h3>Campera RedBull 2023</h3>
                 <button class="boton-comun btn-producto" id="btn" type="submit">Anadir al carrito</button>
                 <!-- <a href="./productos.html" class="boton-comun btn-producto" id="btn-">añadir al carrito</a> -->
-            </div>
+        <!-- </div>
             <div class="noti-card">
                 <img src="../img/campera-mercedes-2022.jpg" alt="campera-mercedes-2022">
                 <h3>Campera Mercedes 2022 </h3>
                 <button class="boton-comun btn-producto" id="btn" type="submit">Anadir al carrito</button>
                 <!-- <a href="./productos.html" class="boton-comun btn-producto" id="btn-">añadir al carrito</a> -->
-            </div>
+        <!-- </div>
             <div class="noti-card">
                 <img src="../img/gorra-mercedes-2023.jpg" alt="gorra-mercedes-2023">
                 <h3>Gorra mercedes 2023</h3>
                 <button class="boton-comun btn-producto" id="btn" type="submit">Anadir al carrito</button>
                 <!-- <a href="./productos.html" class="boton-comun btn-producto" id="btn-">añadir al carrito</a> -->
-            </div>
+        <!-- </div>
             <div class="noti-card">
                 <img src="../img/gorra-leclerc-2024.jpg" alt="gorra-leclerc-2024">
                 <h3>gorra-leclerc-2024</h3>
                 <button class="boton-comun btn-producto" id="btn" type="submit">Anadir al carrito</button>
                 <!-- <a href="./productos.html" class="boton-comun btn-producto" id="btn-">añadir al carrito</a> -->
-            </div>
+        <!-- </div>
             <div class="noti-card">
                 <img src="../img/gorra-new-era-red-bull.jpg" alt="gorra-redbull-2024">
                 <h3>Gorra RedBull 2024</h3>
                 <button class="boton-comun btn-producto" id="btn" type="submit">Anadir al carrito</button>
                 <!-- <a href="./productos.html" class="boton-comun btn-producto" id="btn-">añadir al carrito</a> -->
-            </div>
-        </section>
-    </main>
-    <footer id="footer">
-        <div>
-            <a href="https://www.instagram.com/f1/" class="icon-link" target="_blank">
-                <i class="bi bi-instagram"></i>
-            </a>
-        </div>
-        <div>
-            <a href="https://twitter.com/F1" class="icon-link" target="_blank">
-                <i class="bi bi-twitter-x"></i>
-            </a>
-        </div>
-        <div>
-            <a href="https://www.youtube.com/c/f1" class="icon-link" target="_blank">
-                <i class="bi bi-youtube"></i>
-            </a>
-        </div>
-        <div>
-            <p>Sitio hecho por Jean</p>
-        </div>
-    </footer>
+        <!-- </div>
+        </section> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
 
-        <script src="../js/productos.js"></script>
+        <div class="container">
+            <h1>Bienvenido a nuestra tienda online</h1>
+
+            <script>
+                window.onload = function () {
+                    let nombre = prompt("Ingrese su nombre:");
+                    let apellido = prompt("Ingrese su apellido:");
+                    let email = prompt("Ingrese su correo electrónico:");
+
+                    if (nombre && apellido && email) {
+                        localStorage.setItem("nombre", nombre);
+                        localStorage.setItem("apellido", apellido);
+                        localStorage.setItem("email", email);
+                    }
+                };
+            </script>
+
+            <section class="productos">
+                <h2>Nuestros productos</h2>
+
+                <div class="noti-card">
+                    <img src="../img/ferrari-jacket.jpg" alt="campera-ferrari">
+                    <h3>Campera Ferrari</h3>
+                    <p>Campera roja ferrari</p>
+                    <button id="btn1">Agregar al carrito</button>
+                    <input type="number" value="1" min="1" id="cantidad1">
+                </div>
+
+                <div class="noti-card">
+                    <img src="../img/campera-mercedes-2022.jpg" alt="campera-mercedes">
+                    <h3>Campera Mercedes</h3>
+                    <p>Campera Mercedes Temporada 2022</p>
+                    <button id="btn2">Agregar al carrito</button>
+                    <input type="number" value="1" min="1" id="cantidad2">
+                </div>
+
+                <div class="noti-card">
+                    <img src="../img/campera-redbull-2023.jpg" alt="campera-redbull">
+                    <h3>Campera Redbull</h3>
+                    <p>Campera REdbull 2023</p>
+                    <button id="btn3">Agregar al carrito</button>
+                    <input type="number" value="1" min="1" id="cantidad3">
+                </div>
+
+                <div class="noti-card">
+                    <img src="../img/gorra-leclerc-2024.jpg" alt="gorra-leclerc-2024">
+                    <h3>Gorra Ferrari</h3>
+                    <p>Gorra Leclerc 2024</p>
+                    <button id="btn4">Agregar al carrito</button>
+                    <input type="number" value="1" min="1" id="cantidad4">
+                </div>
+
+            </section>
+
+            <section class="carrito">
+                <h2>Resumen del carrito</h2>
+
+                <div id="datos-usuario">
+                    <h3>Datos del usuario:</h3>
+                    <p>Nombre: <span id="nombre-usuario"></span></p>
+                    <p>Apellido: <span id="apellido-usuario"></span></p>
+                    <p>Email: <span id="email-usuario"></span></p>
+                </div>
+
+                <table id="tabla-carrito">
+                    <thead>
+                        <tr>
+                            <th>Producto </th>
+                            <th>Precio </th>
+                            <th>Cantidad </th>
+                            <th>Subtotal </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Total:</td>
+                            <td id="total"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <button id="finalizar-compra">Finalizar compra</button>
+            </section>
+        </div>
+
+
+
+</html>
+
+</main>
+<footer id="footer">
+    <div>
+        <a href="https://www.instagram.com/f1/" class="icon-link" target="_blank">
+            <i class="bi bi-instagram"></i>
+        </a>
+    </div>
+    <div>
+        <a href="https://twitter.com/F1" class="icon-link" target="_blank">
+            <i class="bi bi-twitter-x"></i>
+        </a>
+    </div>
+    <div>
+        <a href="https://www.youtube.com/c/f1" class="icon-link" target="_blank">
+            <i class="bi bi-youtube"></i>
+        </a>
+    </div>
+    <div>
+        <p>Sitio hecho por Jean</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="../js/productos.js"></script>
 </body>
 
 </html>
